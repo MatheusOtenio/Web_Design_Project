@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Hardware Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">Queremos descobrir qual a configuração do seu PC!</h1>
+        <p id="description">Ajude em nossa pesquisa para descobrir quais são as configurações mais comuns de hardware entre as pessoas. Responda as perguntas abaixo!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-fields">
+                <label id="name-label"><b>Nome:</b></label>
+                <input id="name" type="text" name="name" class="form" required placeholder="Seu nome completo"><br><br>
+                
+                <label id="email-label"><b>Email:</b></label>
+                <input id="email" type="email" name="email" class="form" required placeholder="seuemail@mail.com"><br><br>
+                
+                <label id="number-label"><b>Idade:</b></label>
+                <input id="number" type="number" name="age" class="form" min="12" max="100" required placeholder="Digite sua idade"><br>
+            </div>
+
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Qual sistema operacional você utiliza atualmente?</strong></label><br>
+                <select id="dropdown" name="os" class="form" required>
+                    <option value="windows">Windows</option>
+                    <option value="linux">Linux</option>
+                    <option value="mac">MacOS</option>
+                </select>
+            </div>
+
+            <div id="radio-buttons-div"><br>
+                <label id="employment-status-label"><strong>Você usa seu PC principalmente para:</strong></label><br>
+                <input type="radio" class="radio-inline" id="work" name="pc-usage" value="work" checked>
+                <label for="work">Trabalho</label><br>
+
+                <input type="radio" class="radio-inline" id="gaming" name="pc-usage" value="gaming">
+                <label for="gaming">Jogos</label><br>
+                
+                <input type="radio" class="radio-inline" id="study" name="pc-usage" value="study">
+                <label for="study">Estudos</label><br>
+            </div>
+
+            <div id="checkbox-div"><br>
+                <label id="checkbox-label"><strong>Quais componentes você gostaria de melhorar no seu PC?</strong></label><br>
+                <input type="checkbox" name="upgrade" value="cpu" id="cpu">
+                <label for="cpu">Processador (CPU)</label><br>
+
+                <input type="checkbox" name="upgrade" value="gpu" id="gpu">
+                <label for="gpu">Placa de vídeo (GPU)</label><br>
+
+                <input type="checkbox" name="upgrade" value="ram" id="ram">
+                <label for="ram">Memória RAM</label><br>
+
+                <input type="checkbox" name="upgrade" value="storage" id="storage">
+                <label for="storage">Armazenamento</label><br>
+            </div>
+
+            <div id="comments-div"><br>
+                <label id="comments-label"><strong>Tem alguma sugestão ou comentário sobre esta pesquisa?</strong></label><br>
+                <textarea id="comments" class="form" rows="4" placeholder="Escreva aqui..."></textarea><br>
+            </div>
+
+            <div id="submit-div"><br>
+                <input id="submit" type="submit" value="Enviar" class="form">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
 
