@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: #001f3f; /* Azul marinho */
+  color: #f1f1f1;
+}
+
+/* Navbar */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background-color: #003366; /* Azul mais claro */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#navbar {
+  height: 100%;
+  overflow-y: auto;
+  border-right: solid 2.5px #0074D9;
+}
+
+#navbar > h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #f1f1f1;
+  padding: 1rem 0;
+  border-bottom: 2px solid #0074D9;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin: 0;
+}
+
+#navbar ul li a {
+  display: block;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+  background-color: #0074D9;
+  color: #001f3f;
+}
+
+/* Main Content */
+#main-doc {
+  margin-left: 300px;
+  padding: 2rem;
+  background-color: #001b33; /* Azul escuro para contraste */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-section {
+  margin-bottom: 2rem;
+}
+
+.main-section header {
+  font-size: 2rem;
+  color: #FFD700; /* Dourado */
+  margin-bottom: 1rem;
+}
+
+.main-article {
+  margin-left: 1rem;
+}
+
+.main-article p {
+  margin-bottom: 1.2rem;
+}
+
+.main-article ul {
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+.main-article ul li {
+  margin-bottom: 0.8rem;
+  list-style-type: disc;
+}
+
+.main-article code {
+  display: block;
+  background-color: #00264d; /* Fundo escuro para código */
+  color: #00FF00; /* Verde brilhante para contraste */
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+}
+
+/* Footer */
+#creator {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #f1f1f1;
+  border-top: 2px solid #0074D9;
+  padding-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #main-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+  }
+
+  #navbar {
+    width: 100%;
+    border-bottom: 2.5px solid #0074D9;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  #navbar ul li a {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #navbar > h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-doc {
+    padding: 1rem;
+  }
+}
