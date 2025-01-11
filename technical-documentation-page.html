@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação Técnica - HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="main-header">
+    <nav id="navbar">
+      <header>
+        <h1>Documentação HTML</h1>
+      </header>
+      <ul>
+        <li><a href="#Introdução" class="nav-link">Introdução</a></li>
+        <li><a href="#Estrutura_Básica" class="nav-link">Estrutura Básica</a></li>
+        <li><a href="#Tags_Comuns" class="nav-link">Tags Comuns</a></li>
+        <li><a href="#Boas_Práticas" class="nav-link">Boas Práticas</a></li>
+        <li><a href="#Avançado" class="nav-link">Avançado</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-doc">
+    <section id="Introdução" class="main-section">
+      <header>Introdução</header>
+      <article class="main-article">
+        <p>HTML é a base de todas as páginas da web. Ele estrutura o conteúdo e permite a integração com CSS e JavaScript.</p>
+        <p>Esta documentação guiará iniciantes na criação de páginas simples e funcionais usando boas práticas.</p>
+        <code>
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Sua Página</title>
+            </head>
+            <body>
+              <h1>Bem-vindo ao HTML!</h1>
+            </body>
+          </html>
+        </code>
+      </article>
+    </section>
+
+    <section id="Estrutura_Básica" class="main-section">
+      <header>Estrutura Básica</header>
+      <article class="main-article">
+        <p>A estrutura de um documento HTML inclui as tags: `<!DOCTYPE>`, `<html>`, `<head>` e `<body>`.</p>
+        <p>Essas tags organizam o conteúdo e configuram os metadados da página.</p>
+        <ul>
+          <li>`<!DOCTYPE>` informa o tipo de documento.</li>
+          <li>`<html>` contém todo o conteúdo da página.</li>
+          <li>`<head>` armazena metadados como título e links para CSS/JS.</li>
+          <li>`<body>` contém o conteúdo visível ao usuário.</li>
+        </ul>
+        <code>
+          <head>
+            <title>Minha Página</title>
+          </head>
+        </code>
+      </article>
+    </section>
+
+    <section id="Tags_Comuns" class="main-section">
+      <header>Tags Comuns</header>
+      <article class="main-article">
+        <p>Tags comuns incluem `<p>`, `<h1>` a `<h6>`, `<a>`, `<img>` e `<ul>`.</p>
+        <p>Elas ajudam a organizar texto, links, imagens e listas no HTML.</p>
+        <ul>
+          <li>`<p>` para parágrafos.</li>
+          <li>`<a>` para links.</li>
+          <li>`<img>` para imagens.</li>
+          <li>`<ul>` e `<li>` para listas não ordenadas.</li>
+        </ul>
+        <code>
+          <a href="https://www.exemplo.com">Visite nosso site</a>
+        </code>
+      </article>
+    </section>
+
+    <section id="Boas_Práticas" class="main-section">
+      <header>Boas Práticas</header>
+      <article class="main-article">
+        <p>Utilizar semântica HTML melhora a acessibilidade e o SEO.</p>
+        <p>Exemplo: use `<header>`, `<footer>`, `<article>` e `<section>` para organização.</p>
+        <ul>
+          <li>Mantenha o código limpo e indentado.</li>
+          <li>Adicione atributos `alt` às imagens.</li>
+          <li>Evite inline styles; prefira CSS externo.</li>
+        </ul>
+        <code>
+          <header>
+            <h1>Boas Práticas</h1>
+          </header>
+        </code>
+      </article>
+    </section>
+
+    <section id="Avançado" class="main-section">
+      <header>Avançado</header>
+      <article class="main-article">
+        <p>Aprenda sobre APIs HTML5, como `<canvas>` para gráficos ou `<video>` para mídia.</p>
+        <p>Explore os atributos de data, formulários e validação nativa.</p>
+        <ul>
+          <li>Interatividade com JavaScript.</li>
+          <li>Melhore o design com CSS.</li>
+          <li>Otimize performance com compressão de arquivos.</li>
+        </ul>
+        <code>
+          <canvas id="meuCanvas" width="500" height="400"></canvas>
+        </code>
+      </article>
+    </section>
+
+    <footer id="creator">
+      <p>Feito por um entusiasta de HTML.</p>
+    </footer>
+  </main>
+</body>
+</html>
