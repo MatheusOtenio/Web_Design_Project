@@ -1,1 +1,118 @@
+:root {
+    --primary-color: #231942;
+    --secondary-color: #87daeb;
+    --highlight-color: #ffb3c1;
+    --light-text: #ffffff;
+    --dark-text: #000000;
+    --heading-title-family: 'Montserrat', sans-serif;
+    --body-font-family: 'Open Sans', sans-serif;
+}
 
+body {
+    font-family: var(--body-font-family), sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Navbar fixo no topo */
+header {
+    position: sticky;
+    top: 0;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Welcome Section */
+#welcome-section {
+    background: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.lg-heading {
+    font-size: 4rem;
+}
+
+.underline {
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+}
+
+.underline-secondary {
+    border-top: 3px solid var(--highlight-color);
+    display: inline-block;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    background: #ffffff;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-tile {
+    background: var(--secondary-color);
+    color: var(--light-text);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-tile a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 810px) {
+    #navbar ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+}
